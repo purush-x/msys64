@@ -3,10 +3,7 @@
 import numpy as np
 
 # Training Patterns
-patterns = np.array([
-    [1, 1, -1, -1],
-    [-1, -1, 1, 1]
-])
+patterns = np.array([[1, 1, -1, -1],[-1, -1, 1, 1]])
 
 # Number of Neurons
 n = patterns.shape[1]

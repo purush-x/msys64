@@ -3,14 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Input Data
-data = np.array([
-    [1, 1],
-    [1, 2],
-    [2, 1],
-    [8, 8],
-    [8, 9],
-    [9, 8]
-])
+data = np.array([[1, 1],[1, 2],[2, 1],[8, 8],[8, 9],[9, 8]])
 
 # SOM Size
 rows = 2
@@ -41,9 +34,7 @@ for epoch in range(100):
 print("Final SOM Weights:")
 print(weights)
 
-# Display Cluster Assignment
 print("\nCluster Assignment:")
-
 for x in data:
     distances = np.linalg.norm(weights - x, axis=2)
     bmu = np.unravel_index(

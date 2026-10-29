@@ -1,5 +1,4 @@
 # Membership Functions
-
 def low(temp):
     if temp <= 20:
         return 1
@@ -8,7 +7,6 @@ def low(temp):
     else:
         return 0
 
-
 def medium(temp):
     if 20 < temp < 30:
         return (temp - 20) / 10
@@ -16,7 +14,6 @@ def medium(temp):
         return (40 - temp) / 10
     else:
         return 0
-
 
 def high(temp):
     if temp <= 30:
